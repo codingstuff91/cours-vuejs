@@ -10,7 +10,10 @@ const apiClient = axios.create({
 })
 
 export default {
-  getEvents() {
-    return apiClient.get('/events')
+  getMovies() {
+    return apiClient.get('/movies')
+  },
+  showMovie(id){
+    return apiClient.get('/movie/' + id)
   }
 }

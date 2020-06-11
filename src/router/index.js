@@ -3,7 +3,8 @@ import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
 import About from '@/views/About.vue'
 import index from '@/components/layouts/index.vue'
-import Conteneur from '@/components/Conteneur.vue'
+import Movies from '@/components/Movies.vue'
+import Movie from '@/components/Movie.vue'
 
 Vue.use(VueRouter)
 
@@ -19,10 +20,16 @@ Vue.use(VueRouter)
     component : About
   },
   {
-    path: '/events',
-    name: 'events',
-    component : Conteneur    
-  }
+    path: '/movies',
+    name: 'movies',
+    component : Movies    
+  },  
+  {
+    path: '/movie/:id',
+    name: 'movie',
+    component : Movie    
+  },
+
 ]
 
 const router = new VueRouter({

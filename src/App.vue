@@ -3,7 +3,7 @@
     <div id="nav">
       <router-link :to="{ name: 'Home' }">Accueil</router-link> |
       <router-link to="/about">A propos</router-link> |
-      <router-link to="/events">Les evenements</router-link>
+      <router-link to="/movies">Les films</router-link>
     </div>
     <router-view/>
   </div>
