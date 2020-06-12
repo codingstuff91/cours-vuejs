@@ -1,7 +1,6 @@
 <template>
 <div>
-  <h1>{{movie.title}}</h1>
-  <p>{{movie.description}}</p>
+  <h1>ID du FILM : {{ this.$route.params.id }}</h1>
 </div>
 </template>
 
@@ -16,12 +15,7 @@ export default {
     }
   },
   mounted(){
-    movieServices.showMovie(this.$route.params.id)
-    .then((response)=>{
-      console.log(response.data)
-      this.movie = response.data
-    })
-    .catch(err => console.log(err))
+
   }
 }
 </script>
