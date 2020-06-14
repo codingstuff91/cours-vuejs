@@ -6,6 +6,8 @@ import Movies from '@/components/Movies.vue'
 import Movie from '@/components/Movie.vue'
 import Styles from '@/components/Styles.vue';
 import Slots from '@/components/Slots.vue';
+import ComputedProperties from '@/components/ComputedProperties.vue';
+import Watcher from '@/components/Watcher.vue';
 
 Vue.use(VueRouter)
 
@@ -29,6 +31,16 @@ Vue.use(VueRouter)
     path: '/styles',
     name: 'styles',
     component : Styles    
+  },
+  {
+    path: '/computed',
+    name: 'computed',
+    component : ComputedProperties    
+  },
+  {
+    path: '/watcher',
+    name: 'watcher',
+    component : Watcher    
   },
   {
     path: '/slots',

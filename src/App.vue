@@ -3,6 +3,8 @@
     <div id="nav">
       <router-link :to="{ name: 'Home' }">Accueil</router-link> |
       <router-link to="/movies">Les films</router-link> | 
+      <router-link to="/computed">Les computed properties</router-link> | 
+      <router-link to="/watcher">Les watchers</router-link> | 
       <router-link to="/styles">Styles dynamiques</router-link> | 
       <router-link to="/slots">Les slots</router-link>
     </div>
