@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
-import About from '@/views/About.vue'
 import index from '@/components/layouts/index.vue'
 import Movies from '@/components/Movies.vue'
 import Movie from '@/components/Movie.vue'
+import Styles from '@/components/Styles.vue';
+import Slots from '@/components/Slots.vue';
 
 Vue.use(VueRouter)
 
@@ -15,11 +16,6 @@ Vue.use(VueRouter)
     component: index
   },
   {
-    path: '/about',
-    name: 'About',
-    component : About
-  },
-  {
     path: '/movies',
     name: 'movies',
     component : Movies    
@@ -28,8 +24,17 @@ Vue.use(VueRouter)
     path: '/movie/:id',
     name: 'movie',
     component : Movie    
+  }, 
+  {
+    path: '/styles',
+    name: 'styles',
+    component : Styles    
   },
-
+  {
+    path: '/slots',
+    name: 'slots',
+    component : Slots    
+  },
 ]
 
 const router = new VueRouter({
