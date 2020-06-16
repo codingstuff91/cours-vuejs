@@ -8,6 +8,7 @@ import Styles from '@/components/Styles.vue';
 import Slots from '@/components/Slots.vue';
 import ComputedProperties from '@/components/ComputedProperties.vue';
 import Watcher from '@/components/Watcher.vue';
+import CommunicatingEvents from '@/components/CommunicatingEvents.vue';
 
 Vue.use(VueRouter)
 
@@ -47,6 +48,11 @@ Vue.use(VueRouter)
     name: 'slots',
     component : Slots    
   },
+  {
+    path: '/events',
+    name: 'events',
+    component : CommunicatingEvents    
+  },  
 ]
 
 const router = new VueRouter({
